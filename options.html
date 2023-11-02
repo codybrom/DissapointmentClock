@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Disappointment Clock Options</title>
+    <link rel="stylesheet" href="./options.css" />
+  </head>
+    <body class="bg-gray-700 p-8">
+      <div class="max-w-xl mx-auto">
+        <h1 class="text-3xl text-white italic font-bold mb-8">Disappointment Clock Options</h1>
+        <form id="configForm" class="space-y-6">
+          <div>
+            <label for="websiteUrl" class="block text-sm font-medium text-white mb-2"
+              >Domain:</label
+            >
+            <input
+              type="text"
+              id="websiteUrl"
+              placeholder="example.com"
+              class="p-2 w-full border rounded shadow-sm"
+            />
+          </div>
+
+          <div class="flex items-center space-x-4">
+            <span class="p-2 w-1/4 font-bold text-white">Minutes</span>
+            <span class="p-2 w-2/5 font-bold text-white">Message</span>
+            <span class="w-1/4 font-bold text-white">Color</span>
+          </div>
+
+          <div class="flex items-center space-x-4">
+            <input
+              type="number"
+              id="time0"
+              disabled
+              value="0"
+              min="0"
+              max="0"
+              step="1"
+              class="p-2 w-1/4 border rounded shadow-sm"
+            />
+            <input
+              type="text"
+              id="message1"
+              value="Don't get lost here"
+              class="p-2 w-2/5 border rounded shadow-sm"
+            />
+            <input type="color" id="color1" value="#808080" class="w-1/4 h-10" />
+          </div>
+
+          <div class="flex items-center space-x-4">
+            <input
+              type="number"
+              id="time1"
+              min="1"
+              max="60"
+              step="1"
+              value="2"
+              class="p-2 w-1/4 border rounded shadow-sm"
+            />
+            <input
+              type="text"
+              id="message2"
+              value="Hey, wrap it up"
+              class="p-2 w-2/5 border rounded shadow-sm"
+            />
+            <input type="color" id="color2" value="#FFA500" class="w-1/4 h-10" />
+          </div>
+
+          <div class="flex items-center space-x-4">
+            <input
+              type="number"
+              id="time2"
+              min="1"
+              max="60"
+              step="1"
+              value="3"
+              class="p-2 w-1/4 border rounded shadow-sm"
+            />
+            <input
+              type="text"
+              id="message3"
+              value="I'm disappointed in you"
+              class="p-2 w-2/5 border rounded shadow-sm"
+            />
+            <input type="color" id="color3" value="#ff4444" class="w-1/4 h-10" />
+          </div>
+
+          <div class="mt-6">
+            <button
+              type="button"
+              id="saveButton"
+              class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded shadow"
+            >
+              Save
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <script src="./options.js" type="module"></script>
+    </body>
+  </html>
+</html>

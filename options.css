@@ -1,0 +1,8 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+html {
+  width: 500px; /* max: 1000px */
+  height: 250px; /* max: 750px */
+}

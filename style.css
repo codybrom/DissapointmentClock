@@ -1,0 +1,42 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.disappointment-header {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  text-align: center;
+  padding: 10px 15px; /* Slightly more horizontal padding for better visual */
+  font-weight: bold;
+  z-index: 9999;
+  border-radius: 15px; /* Making it a rounded rectangle */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Optional: Add a subtle shadow for better visibility */
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pause-restart-button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #ffffff;
+  color: #333333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.pause-restart-button:hover {
+  background-color: #f2f2f2;
+}
+
+#timer {
+  display: block; /* Display on its own line */
+  font-size: 1.5em; /* Make the text larger */
+  margin: 5px; /* Add some margin for better visual spacing */
+}
