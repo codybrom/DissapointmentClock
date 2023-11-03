@@ -1,5 +1,6 @@
 # Disappointment Timer 
 Floating countdown extension for Chrome and Chromium browsers with customizable messages and colors based on the elapsed time
+
 ![Screenshot](https://github.com/codybrom/disappointment-clock/assets/241370/67b0b959-33a4-4e3f-9418-525b7e6f1998)
 
 
