@@ -5,7 +5,7 @@
   "main": "background.js",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build && node scripts/zip-dist.js"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +17,7 @@
     "vite": "^4.5.0"
   },
   "devDependencies": {
+    "archiver": "^6.0.1",
     "vite-plugin-static-copy": "^0.17.0"
   }
 }
