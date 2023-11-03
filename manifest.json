@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Disappointment Timer",
   "version": "1.0",
-  "description": "Adds a header with a countdown when you open a specific website",
+  "description": "Floating countdown extension with customizable messages and colors based on the elapsed time",
   "permissions": ["activeTab", "storage"],
   "content_security_policy": {
     "extension_pages": "script-src 'self'; object-src 'self';"
