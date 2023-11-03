@@ -24,5 +24,5 @@ archive.on('error', err => {
 });
 
 archive.pipe(output);
-archive.directory('../dist/', false); // Update the path to the dist folder
+archive.directory('dist/', false); // Update the path to the dist folder
 archive.finalize();
