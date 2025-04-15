@@ -1,7 +1,10 @@
 import {viteStaticCopy} from 'vite-plugin-static-copy';
+import tailwindcss from '@tailwindcss/vite';
+import {defineConfig} from 'vite';
 
-export default {
+export default defineConfig({
   plugins: [
+    tailwindcss(),
     viteStaticCopy({
       targets: [
         {src: 'background.js', dest: ''},
@@ -14,20 +17,18 @@ export default {
       overwrite: true,
     }),
   ],
-  base: './', // This is required to ensure that assets are loaded correctly when running as a Chrome extension.
+  base: './', // Required for Chrome extension asset loading
   build: {
     outDir: 'dist',
     emptyOutDir: true,
-    assetsDir: '', // Ensure static assets are on the root of dist.
+    assetsDir: '', // Ensure static assets are on the root of dist
     rollupOptions: {
       input: {
-        // popup: 'path/to/popup.html',
         options: 'options.html',
         // Add more entry points if you have other HTML files
       },
     },
+    target: 'esnext',
+    minify: false,
   },
-  css: {
-    postcss: './postcss.config.js', // point to your PostCSS config if it's not automatically detected
-  },
-};
+});
